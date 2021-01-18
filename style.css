@@ -1,0 +1,51 @@
+body{
+    display: block;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(#040404, #000000);
+    color: white;
+
+}
+
+#head{
+    border: 2px solid red;
+    width: 10%;
+    height: 100%;
+    float: left;
+}
+
+.mainsec{
+    float: left;
+    border: 2px solid red;
+    width: 90%; 
+    height: 100%;
+
+}
+.mainrow{
+    
+    border: 2px solid blue;
+    height: 100%;
+}
+.home{
+
+    border: 2px solid red;
+}
+
+.aboutMe{
+    border: 2px solid red;
+
+}
+
+
+#skills{
+    display: none;
+}
+
+#portfolio{
+    display: none;
+}
+
+#contact{
+    display: none;
+}
