@@ -47,11 +47,13 @@ body{
     font-family: 'BioRhyme', serif; 
     display: flex;
     align-items: center;
+    justify-content: center;
 
 }
 .home .item{
    
    /* margin: 200px 0px auto 0px;*/
+
 }
 
 .home .item p{
@@ -64,12 +66,15 @@ body{
     align-items: center;
     justify-content: center;
     text-align: center;
+    color:brown
 }
 
-.sideb .item{
-
+.sideb .item h1, #portfolio h1 {
+color: #fe6847;
     
 }
+
+
 label{
     text-align:left;
 }

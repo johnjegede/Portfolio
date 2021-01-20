@@ -64,7 +64,6 @@ $(document).ready(function(){
 
     $navItems.on("click",function(e){
         e.preventDefault();
-        console.log(e.target);
 
         var $currlink = $(e.target);
         var id = $($currlink.attr('href'));
@@ -84,7 +83,6 @@ $(document).ready(function(){
 
     $(this).on("click",function(e){
         e.preventDefault();
-        console.log(e.target);
 
         var $currlink = $(e.target);
         var id = $($currlink.attr('href'));
