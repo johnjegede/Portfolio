@@ -26,26 +26,36 @@ body{
     
     border: 2px solid blue;
     height: 100%;
+    
 }
 .home{
 
+    border: 2px solid green;
+    color:#ef6f6c;  
+
+}
+.home .item{
+    margin: 200px 0px auto 0px;
+
     border: 2px solid red;
+    vertical-align: center;
 }
 
-.aboutMe{
+.home .item .div{
+    text-align: center;
+}
+
+.sideb{
     border: 2px solid red;
 
 }
 
 
-#skills{
+.panel{
     display: none;
 }
 
-#portfolio{
-    display: none;
+.panel.active{
+    display: block;
 }
 
-#contact{
-    display: none;
-}

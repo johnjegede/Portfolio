@@ -9,11 +9,7 @@
       integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
       crossorigin="anonymous"
     />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css" type="text/css" />
     <title>Portfolio</title>
   </head>
@@ -27,44 +23,82 @@
         />
         <div>portfolio</div>
       </a>
-      <nav class="nav flex-column">
-        <a class="nav-link" href="">Home</a>
-        <a class="nav-link" href="">About</a>
-        <a class="nav-link" href="">Skills</a>
-        <a class="nav-link" href="">Portfolio</a>
-        <a class="nav-link" href="">Contact</a>
+      <nav class="nav flex-column tablist">
+        
+        <li><a class="nav-link control" href="#about"><i class="bi bi-house-door-fill fa-lg"></i>Home</a></li>
+        <li class="active"><a class="nav-link control" href="#about"><i class="bi bi-person-circle fa-lg"></i>About</a></li>
+        <li><a class="nav-link control" href="#skills"><i class="bi bi-gear"></i>Skills</a></li>
+        <li><a class="nav-link control" href="#portfolio"><i class="bi bi-folder-fill"></i>Portfolio</a></li>
+        <li><a class="nav-link control" href="#contact"><i class="bi bi-envelope-fill"></i>Contact</a></li>
       </nav>
       <nav class="nav flex-column">
-        <a class="nav-link">linkedIn</a>
-        <a class="nav-link">GitHub</a>
+        <a class="nav-link"><i class="bi bi-linkedin"></i>linkedIn</a>
+        <a class="nav-link"> <i class="bi bi-github"></i>GitHub</a>
       </nav>
     </header>
     <section id="info" class="container-fluid mainsec">
         <div class="row mainrow">
             <section class="col-5 home"> 
+              <div class="item">
                 <h1>Hey,</h1>
                 <h1>I am John</h1>
-                <h1>A Full Stack developer</h1> 
-                <div>
-                    <span>Email</span>
+                <h1>A Full Stack Developer</h1> 
+                <div class="div">
+                  <p>My
+                    <span>Email</span> and 
                     <span>Phone Number</span>
+                  </p>
                 </div>
 
+              </div>
             </section>
-            <section id="about" class="col-7 aboutMe">
+            <section id="about" class="col-7 sideb panel active">
                 <h1>About me</h1>
+                <p>
+                  I am passionate about web development. I have knowledge in both hardware and software from my industry experience.
+                  A problem solver and can work independently.
+                  My hobbies involve watching and playing soccer, reading then travelling.
+                  I am more interested in every thing backend and working on interesting Projects with positive people.
+                </p>
+            </section>
+            <section id="skills" class="col-7 sideb panel">
+              <h1>Skills</h1>
+              The area of my expertise is both the front and backend development
+
+              My skills are HTML, CSS, JavaScript, Node.js, React, Epress.js, MongoDb.
+
+              See my resume for more details or contact me
+            </section>
+            <section id="portfolio" class="col-7 sideb panel">
+              <h1>Projects</h1>
+              <section>
+
+              </section>
+              <section>
+
+              </section>
+              <section>
+
+              </section>
+            </section>
+            <section id="contact" class="col-7 sideb panel">
+              <h1>Contact me</h1>
+              I am interested in freelance opportunities especially interesting projects be it volunter or paid project.
+              if you have other questions please dont hesitate to use the form below. Thank you.
+              <form action="">
+                <input placeholder="Name"  type="text">
+                <input placeholder="Email" type="text">
+                <textarea placeholder="Message" name="" id="" cols="30" rows="10"></textarea>
+              </form>
             </section>
         </div>
     </section>
-    
-    <section id="skills">
-      <h1>Skills</h1>
-    </section>
-    <section id="portfolio">
-      <h1>Projects</h1>
-    </section>
-    <section id="contact">
-      <h1>Contact me</h1>
-    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+       <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
   </body>
 </html>
