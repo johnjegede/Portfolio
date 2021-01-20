@@ -10,45 +10,56 @@ $(document).ready(function(){
 
         var currlink = e.target;
         var id = currlink.getAttribute('href');
-        
+        console.log(e.target);
+        //console.log(e.target.innerHTML);
+        content = "";
 
         if(id == "#about")
         {
-            content = e.target.textContent;
-            console.log(e.target.textContent);
+            content = e.target.innerHTML;
             e.target.textContent = "About";
         }else if(id == "#skills")
         {
+            content = e.target.innerHTML;
             e.target.textContent = "Skills";
         }else if(id == "#portfolio")
         {
+            content = e.target.innerHTML;
             e.target.textContent = "Portfolio";
         }else if(id == "#contact")
         {
+            content = e.target.innerHTML;
             e.target.textContent = "Contact";
+        }else if(id == "index.html")
+        {
+            content = e.target.innerHTML;
+            e.target.textContent = "Home";
         }
 
      });
 
-     $navItems.on("mousemove",function(e){
+     $navItems.on("mouseout",function(e){
 
         var currlink = e.target;
         var id = currlink.getAttribute('href');
+        console.log(content);
         
 
         if(id == "#about")
         {
-            //content = e.target.textContent;
-            e.target.textContent = content;
+            e.target.innerHTML = content;
         }else if(id == "#skills")
         {
-            //e.target.textContent = "Skills";
+            e.target.innerHTML = content;
         }else if(id == "#portfolio")
         {
-            //e.target.textContent = "Portfolio";
+            e.target.innerHTML = content;
         }else if(id == "#contact")
         {
-            //e.target.textContent = "Contact";
+            e.target.innerHTML = content;
+        }else if(id == "index.html")
+        {
+            e.target.innerHTML = content;
         }
 
      });
