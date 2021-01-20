@@ -9,10 +9,15 @@ body{
 }
 
 #head{
-    border: 2px solid red;
+    border: 2px solid green;
     width: 10%;
     height: 100%;
     float: left;
+     
+}
+
+#head a{
+    color:#099FFF;
 }
 
 .mainsec{
@@ -31,22 +36,32 @@ body{
 .home{
 
     border: 2px solid green;
-    color:#ef6f6c;  
+    color:#099FFF; 
+    font-family: 'BioRhyme', serif; 
+    display: flex;
+    align-items: center;
 
 }
 .home .item{
-    margin: 200px 0px auto 0px;
-
-    border: 2px solid red;
-    vertical-align: center;
+   
+   /* margin: 200px 0px auto 0px;*/
+    border: 2px solid red;  
 }
 
-.home .item .div{
+.home .item p{
     text-align: center;
 }
 
 .sideb{
     border: 2px solid red;
+    display: flex;
+    align-items: center;
+}
+
+.sideb{
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
 
 }
 
@@ -56,6 +71,6 @@ body{
 }
 
 .panel.active{
-    display: block;
+    display: flex;
 }
 
