@@ -9,10 +9,11 @@ body{
 }
 
 #head{
-    border: 2px solid green;
+
     width: 10%;
     height: 100%;
     float: left;
+    font-size: 30px;
      
 }
 
@@ -22,20 +23,17 @@ body{
 
 .mainsec{
     float: left;
-    border: 2px solid red;
+  
     width: 90%; 
     height: 100%;
 
 }
 .mainrow{
-    
-    border: 2px solid blue;
     height: 100%;
     
 }
 .home{
 
-    border: 2px solid green;
     color:#099FFF; 
     font-family: 'BioRhyme', serif; 
     display: flex;
@@ -45,7 +43,6 @@ body{
 .home .item{
    
    /* margin: 200px 0px auto 0px;*/
-    border: 2px solid red;  
 }
 
 .home .item p{
@@ -53,7 +50,7 @@ body{
 }
 
 .sideb{
-    border: 2px solid red;
+  
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,7 +58,7 @@ body{
 }
 
 .sideb .item{
-    border: 2px solid red;
+
     
 }
 label{
@@ -84,10 +81,25 @@ label{
 
 .projects{
 
-    border: 2px solid purple;
-    display: block;
+    
     width: 100%;
     height: 30%;
+    padding: 20px;
+    vertical-align:middle;  
+}
+.projects .p{
     
+    display: inline-block;
+    color: blueviolet;
+    width: 50%;
+    height: 100%;
+   
+    text-align:left;
 
+    
+}
+.projects img{
+    width: 300px;
+    height: 100%;
+    
 }
