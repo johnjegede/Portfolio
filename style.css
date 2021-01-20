@@ -10,11 +10,20 @@ body{
 
 #head{
 
-    width: 10%;
+    width: 5%;
     height: 100%;
     float: left;
-    font-size: 30px;
+    font-size: 20px;
+    margin: 0px;
      
+}
+
+#nameInit{
+    font-family: 'Alegreya SC', serif;
+    font-weight: bold;
+    font-size: 50px;
+    color: white;
+
 }
 
 #head a{
@@ -90,7 +99,7 @@ label{
 .projects .p{
     
     display: inline-block;
-    color: blueviolet;
+    color:#90323D;
     width: 50%;
     height: 100%;
    
@@ -103,3 +112,15 @@ label{
     height: 100%;
     
 }
+
+.see {
+    display: none;
+  }
+      
+  .div:hover + .see {
+    display: block;
+    color: red;
+  }
+  .form{
+      padding: 10px;
+  }

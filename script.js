@@ -10,8 +10,6 @@ $(document).ready(function(){
 
         var currlink = e.target;
         var id = currlink.getAttribute('href');
-        console.log(e.target);
-        //console.log(e.target.innerHTML);
         content = "";
 
         if(id == "#about")
@@ -30,7 +28,7 @@ $(document).ready(function(){
         {
             content = e.target.innerHTML;
             e.target.textContent = "Contact";
-        }else if(id == "index.html")
+        }else if(id == "#home")
         {
             content = e.target.innerHTML;
             e.target.textContent = "Home";
@@ -42,9 +40,7 @@ $(document).ready(function(){
 
         var currlink = e.target;
         var id = currlink.getAttribute('href');
-        console.log(content);
         
-
         if(id == "#about")
         {
             e.target.innerHTML = content;
@@ -57,12 +53,13 @@ $(document).ready(function(){
         }else if(id == "#contact")
         {
             e.target.innerHTML = content;
-        }else if(id == "index.html")
+        }else if(id == "#home")
         {
             e.target.innerHTML = content;
         }
 
      });
+
 
 
     $navItems.on("click",function(e){
@@ -82,4 +79,25 @@ $(document).ready(function(){
         }
 
     });
+
+    $(".link").each(function(){
+
+    $(this).on("click",function(e){
+        e.preventDefault();
+        console.log(e.target);
+
+        var $currlink = $(e.target);
+        var id = $($currlink.attr('href'));
+
+        if(id && !$currlink.is('.active'))
+        {
+            $panel.removeClass('active')
+            $tab.removeClass('active')
+
+            $panel = $(id).addClass('active');
+            $tab = $currlink.parent().addClass('active');
+        }
+
+    })
+});
 });
