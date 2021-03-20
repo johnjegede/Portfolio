@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
 
     var $navItems = $(".tablist");
@@ -5,6 +6,9 @@ $(document).ready(function(){
     var $link = $tab.find('a');
     var $panel = $($link.attr('href'));
     var content;
+
+    //col-7 sideb panel class="rounded float-start"
+    
 
     $navItems.on("mouseover",function(e){
 
@@ -67,14 +71,39 @@ $(document).ready(function(){
 
         var $currlink = $(e.target);
         var id = $($currlink.attr('href'));
+        var $home = $(".home");
+        //console.log(id[0].id);
 
         if(id && !$currlink.is('.active'))
         {
             $panel.removeClass('active')
             $tab.removeClass('active')
 
+            if(id[0].id == "portfolio" )
+            { 
+                $home.hide();
+                $("#portfolio").css({
+                    "width": "100%",
+                    "padding": "0 50px"
+                });
+                //console.log("this is a portfolio");
+            }else{
+                $home.fadeIn();
+            }
+
             $panel = $(id).addClass('active');
             $tab = $currlink.parent().addClass('active');
+            new Splide( '#image-slider',{
+               
+                width: '80%',
+                height: "80vh"
+            } ).mount();
+            // var splide = new Splide( '#image1' );
+            // splide.on( 'click', function(e) {
+            //     // do something
+            //     console.log(splide);
+            //     console.log("this is me");
+            // } );
         }
 
     });
@@ -94,8 +123,12 @@ $(document).ready(function(){
 
             $panel = $(id).addClass('active');
             $tab = $currlink.parent().addClass('active');
+            
         }
 
     })
 });
+
+
+
 });
