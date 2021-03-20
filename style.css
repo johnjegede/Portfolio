@@ -7,6 +7,10 @@ body{
     color: white;
 
 }
+.noStyle{
+    /* list-style-type: none; */
+    color: black;
+}
 
 #head{
 
@@ -103,7 +107,8 @@ label{
 
 .tech,.title{
     display: inline-block;
-    text-align: center;
+    padding: 10px;
+    text-align: left;
 }
 .list li{
     display:inline;

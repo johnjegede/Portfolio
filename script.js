@@ -84,7 +84,7 @@ $(document).ready(function(){
                 $home.hide();
                 $("#portfolio").css({
                     "width": "100%",
-                    "padding": "0 50px"
+                    "padding": "0 50px 0 50px"
                 });
                 //console.log("this is a portfolio");
             }else{
@@ -94,16 +94,12 @@ $(document).ready(function(){
             $panel = $(id).addClass('active');
             $tab = $currlink.parent().addClass('active');
             new Splide( '#image-slider',{
-               
-                width: '80%',
-                height: "80vh"
+                'cover'      : true,
+               'heightRatio': 0.8,
+                width: '80%'
+                //height: "80vh"
             } ).mount();
-            // var splide = new Splide( '#image1' );
-            // splide.on( 'click', function(e) {
-            //     // do something
-            //     console.log(splide);
-            //     console.log("this is me");
-            // } );
+           
         }
 
     });

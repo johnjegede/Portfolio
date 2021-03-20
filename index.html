@@ -19,28 +19,33 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <header  id= "head"class="navbar nav flex-column">
+    <header  id= "head"class="col-sm-1 flex-column ">
       <a class="nav-link" href="index.html">
         <p id = "nameInit">J</p>
         <p>portfolio</p>
         
       </a>
-      <nav class="nav flex-column tablist">
+      <nav class="  flex-column tablist">
         
-        <li class="active"><a class="nav-link control atag" href="#home"><i class="bi bi-house-door-fill fa-lg atag"></i> </a></li>
-        <li><a class="nav-link control atag" href="#about"><i class="bi bi-person-circle fa-lg"></i> </a></li>
-        <li><a class="nav-link control atag" href="#skills"><i class="bi bi-gear"></i> </a></li>
-        <li><a class="nav-link control atag" href="#portfolio"><i class="bi bi-folder-fill"></i> </a></li>
-        <li><a class="nav-link control atag" href="#contact"><i class="bi bi-envelope-fill"></i> </a></li>
+        <li class=" nav-item noStyle active"><a class="nav-link control atag" href="#home"><i class="bi bi-house-door-fill fa-lg atag"></i> </a></li>
+        <li class=" nav-item noStyle "><a class="nav-link control atag" href="#about"><i class="bi bi-person-circle fa-lg"></i> </a></li>
+        <li class=" nav-item noStyle"><a class="nav-link control atag" href="#skills"><i class="bi bi-gear"></i> </a></li>
+        <li class=" nav-item noStyle"><a class="nav-link control atag" href="#portfolio"><i class="bi bi-folder-fill"></i> </a></li>
+        <li class=" nav-item noStyle"><a class="nav-link control atag" href="#contact"><i class="bi bi-envelope-fill"></i> </a></li>
       </nav>
-      <nav class="nav flex-column">
-        <a class="nav-link" href="https://www.linkedin.com/in/john-jegede-bababbb2/" target="_blank"><i class="bi bi-linkedin"></i> </a>
-        <a class="nav-link" href="https://github.com/johnjegede" target="_blank"> <i class="bi bi-github"></i> </a>
+      <nav class="  flex-column">
+        <li class=" nav-item noStyle"><a class="nav-link" href="https://www.linkedin.com/in/john-jegede-bababbb2/" target="_blank"><i class="bi bi-linkedin"></i> </a></li>
+
+        <li class=" nav-item noStyle"><a class="nav-link" href="https://github.com/johnjegede" target="_blank"> <i class="bi bi-github"></i> </a></li>
+        
+        
       </nav>
     </header>
+
+
     <section id="info" class="container-fluid mainsec">
         <div class="row mainrow">
-            <section class="col-5 home"> 
+            <section class="col-sm-5 home"> 
               <div class="item">
                 <h1>Hey,</h1>
                 <h1>I am John</h1>
@@ -50,15 +55,15 @@
               </div>
             </section>
 
-            <section id="home" class="col-7 sideb panel active">
+            <section id="home" class="col-sm-7 sideb panel active">
               <div class="item">
-                <p> This is me</p>
+                <p> </p>
 
               </div>
 
             </section>
           
-            <section id="about" class="col-7 sideb panel ">
+            <section id="about" class="col-sm-7 sideb panel ">
               <div class="item">
                 <h1>About me</h1>
                 <p>
@@ -76,7 +81,7 @@
               </div>
 
             </section>-->
-            <section id="skills" class="col-7 sideb panel">
+            <section id="skills" class="col-sm-7 sideb panel">
               
               <div class="item">
                 <h1>Skills</h1>
@@ -95,11 +100,62 @@
               
               
             </section>
-            <section id="portfolio" class="col-7 panels ">
-              <h1>Projects</h1>
+            <section id="portfolio" class="col-sm-7 panels ">
+              <h1>PROJECTS</h1>
               <div id="image-slider" class="splide">
                 <div class="splide__track">
                   <ul class="splide__list">
+                    <li class="splide__slide">
+                      <div class="title">
+                        <h4>Burger app</h4>
+                        <p>This is a Create Read Update Delete App. <span>Click image to go to app<span></p>
+                        </div>
+                        <a href="https://calm-plains-16763.herokuapp.com/" target="_blank">
+                      <div id="image1" class="splide__slide__container">
+                        <img src="images/burger.JPG">
+                      </div> </a>
+                        <div class="tech">
+                          <h5>Technology </h5>
+                          <p>Front End:HTML, CSS, JavaScript, Jquery, handlebars</p>
+                          <p>Backend: Node js, Express js, MySql</p>
+                          <p>Deployed Link: <a href="https://calm-plains-16763.herokuapp.com/" target="_blank"> Deployed App </a></p>
+                          <p>Github Link: <a href="https://github.com/johnjegede/burger_app" target="_blank"> Github repo </a></p>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="title">
+                        <h4>Game Sore app</h4>
+                        <p> This is a store where you can search and purchase games. <span>Click image to go to app<span></p>
+                        </div>
+                        <a href="https://https://group1-project2.herokuapp.com/" target="_blank">
+                      <div id="image1" class="splide__slide__container">
+                        <img src="images/game.JPG">
+                      </div> </a>
+                      <div class="tech">
+                        <h5>Technology </h5>
+                        <p>Front End:HTML, CSS, JavaScript, Jquery, handlebars</p>
+                        <p>Backend: Node js, Express js, MySql, JWT</p>
+                        <p>Deployed Link: <a href="https://https://group1-project2.herokuapp.com/" target="_blank"> Deployed App </a></p>
+                        <p>Github Link: <a href="https://github.com/johnjegede/The-Games-Folder" target="_blank"> Github repo </a></p>
+                    </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="title">
+                        <h4>Note Taker app</h4>
+                        <p> This is an app for taking notes and stores the notes in a database. <span>Click image to go to app<span></p>
+                        </div>
+                        <a href="https://fathomless-gorge-95551.herokuapp.com/" target="_blank">
+                      <div id="image1" class="splide__slide__container">
+                        <img src="images/noteTaker.JPG">
+                      </div> </a>
+                      <div class="tech">
+                        <h5>Technology </h5>
+                        <p>Front End:HTML, CSS, JavaScript, Jquery</p>
+                        <p>Backend: Node js, Express js, MySql</p>
+                        <p>Deployed Link: <a href="https://fathomless-gorge-95551.herokuapp.com/" target="_blank"> Deployed App </a></p>
+                        <p>Github Link: <a href="https://github.com/johnjegede/Note_taker" target="_blank"> Github repo </a></p>
+                    </div>
+                    </li>
                     <li class="splide__slide">
                       <div class="title">
                         <h4>Movie Search app</h4>
@@ -109,33 +165,28 @@
                       <div id="image1" class="splide__slide__container">
                         <img src="images/g34.PNG">
                       </div> </a>
-                        <div class="tech">
-                          <h5>Technology </h5>
-                        <ul class="list">
-                          <li>HTML, </li>
-                          <li>CSS: UIkit Framework, </li>
-                          <li>JavaScript, Jquery, </li>
-                          <li>API: Giphy, OMDb </li>  
-                        </ul>
-                      </div>
+                      <div class="tech">
+                        <h5>Technology </h5>
+                        <p>Front End:HTML, CSS: UIkit Framework, JavaScript, Jquery, API: Giphy, OMDb</p>
+                        <p>Deployed Link: <a href="https://johnjegede.github.io/movie-search/" target="_blank"> Deployed App </a></p>
+                        <p>Github Link: <a href="https://github.com/johnjegede/movie-search" target="_blank"> Github repo </a></p>
+                    </div>
                     </li>
                     <li class="splide__slide">
                       <div class="title">
                         <h4>Weather app</h4>
-                              <p>Displays the Weather for a location and the forcast. <span>Click image to go to app</span></p>
+                              <p>Displays the Weather for a location and 5 day forcast. <span>Click image to go to app</span></p>
                       </div>
                       <a href="https://johnjegede.github.io/Weather_App/" target="_blank">
                       <div class="splide__slide__container">
                       <img src="images/Image1.PNG">
                     </div>  </a>
                     <div class="tech">
-                      <h5>Technology</h5>
-                        <ul  class="list">
-                          <li>HTML, CSS </li>
-                          <li>JavaScript, Jquery</li>
-                          <li>API: open weather api </li>
-                        </ul>
-                    </div>     
+                      <h5>Technology </h5>
+                      <p>Front End:HTML, CSS, JavaScript, Jquery, API: open weather api</p>
+                      <p>Deployed Link: <a href="https://johnjegede.github.io/Weather_App/"  target="_blank"> Deployed App </a></p>
+                      <p>Github Link: <a href= "https://github.com/johnjegede/Weather_App/" target="_blank"> Github repo </a></p>
+                  </div>     
                     </li>
                     <li class="splide__slide">
                       <div class="title">
@@ -146,74 +197,18 @@
                       <div class="splide__slide__container">
                       <img src="images/schduler.PNG">
                     </div> </a>
-                    <div class="tech"> 
-                      <h5>Technology</h5>
-                        <ul class="list">
-                          <li>HTML, CSS </li>
-                          <li>JavaScript, Jquery</li>
-                          <li>Moment.js</li>
-                        </ul>
-
-                    </div>
+                    <div class="tech">
+                      <h5>Technology </h5>
+                      <p>Front End:HTML, CSS, JavaScript, Jquery, Moment.js</p>
+                      <p>Deployed Link: <a href="https://johnjegede.github.io/Schedular/"  target="_blank"> Deployed App </a></p>
+                      <p>Github Link: <a href= "https://github.com/johnjegede/Schedular" target="_blank"> Github repo </a></p>
+                  </div>
                     </li>
                   </ul>
                 </div>
               </div>
-             <!-- <div id="image-slider" class="splide">
-                <div class="splide__track">
-                  <ul class="splide__list">
-                    <li class="splide__slide">
-                      <section class="projects">
-                        <a href="https://johnjegede.github.io/movie-search/" target="_blank">
-                        <img src="images/g34.PNG" class="rounded float-start" alt="Movie app image">
-                      </a>
-                        <div class="p">
-                          <h4>Movie Search app</h4>
-                          <p> Displays details of movies been searched. <span>Click image to go to app<span></p>
-                          <h5>Technology </h5>
-                          <ul>
-                            <li>HTML </li>
-                            <li>CSS: UIkit Framework</li>
-                            <li>JavaScript, Jquery</li>
-                            <li>API: Giphy, OMDb </li>  
-                          </ul>
-                        </div>
-                      </section>
-                    </li>
-                    <li class="splide__slide">
-                      <section class="projects">
-                        <a href="https://johnjegede.github.io/Weather_App/" target="_blank">
-                        <img src="images/Image1.PNG" class="rounded float-end" alt="Weather app image">
-                      </a>
-                        <div class="p">
-                          <h4>Weather app</h4>
-                            <p>Displays the Weather for a location and the forcast. <span>Click image to go to app</span></p>
-                            <h5>Technology</h5>
-                            <ul>
-                              <li>HTML, CSS </li>
-                              <li>JavaScript, Jquery</li>
-                              <li>API: open weather api </li>
-                            </ul>
-                            
-                          </div>
-                      </section>
-                    </li>
-                    <li class="splide__slide">
-                      <section class="projects ">
-                        
-                        <img src="images/schduler.PNG" class="rounded float-start" alt="Schduler app image">
-                      </a>
-                        <div class="p">
-                         
-                          </div>
-                      </section>
-                    </li>
-                  </ul>
-                </div>
-              </div> -->
-              
             </section>
-            <section id="contact" class="col-7 sideb panel">
+            <section id="contact" class="col-sm-7 sideb panel">
               <div class="item">
               <h1>Contact me</h1>
               <p> I am interested in freelance opportunities especially interesting projects be it volunter or paid project.
