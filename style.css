@@ -74,14 +74,15 @@ body{
     align-items: center;
     justify-content: center;
     text-align: center;
-    color:brown
+    color:white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 24px;
 }
 
 .sideb .item h1, #portfolio h1 {
 color: #fe6847;
     
 }
-
 
 label{
     text-align:left;
@@ -93,61 +94,28 @@ label{
 }
 
 .panel.active{
-    /* display: flex; */
+    
     display:flex;
 }
 .panels.active{
-    /* display: flex; */
+
     display:block;
 }
- /* #portfolio {
-    flex-direction: column;
-   
-}  */
 
 .tech,.title{
     display: inline-block;
     padding: 10px;
     text-align: left;
-}
-.list li{
-    display:inline;
-    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
 }
 
-.projects{
-
-    
-    width: 100%;
-    height: 30%;
-    padding: 20px;
-    vertical-align:middle;  
-}
-.projects .p{
-    
-    display: inline-block;
-    color:#90323D;
-    width: 50%;
-    height: 100%;
-   
-    text-align:left;
-
-    
-}
 #portfolio img{
     width: 100%;
     height: 60vh;
     
 }
 
-.see {
-    display: none;
-  }
-      
-  .div:hover + .see {
-    display: block;
-    color: red;
-  }
   .form{
       padding: 10px;
   }
