@@ -21,11 +21,13 @@ const Navbar = () => {
   return (
     <div className="fixed w-full h-[10vh] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 ">
       <div>
+        <a href="/">
         <img
           src={Logo}
           alt="Cartoon"
           style={{ width: "50px", height: "50px" }}
         />
+        </a>
       </div>
       {/* menu */}
 
@@ -98,12 +100,12 @@ const Navbar = () => {
       </ul>
 
       {/* Social icons */}
-      <div className=" fixed flex-col top-[35%] left-0 hidden lg:flex">
+      <div className=" hidden fixed flex-col top-[35%] left-0 lg:flex">
         <ul>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
+          <li className=" w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="/"
+              href="https://www.linkedin.com/in/john-jegede-bababbb2"
             >
               LinkedIn <FaLinkedin size={30} />
             </a>
@@ -111,7 +113,7 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="/"
+              href="https://github.com/johnjegede"
             >
               Github <FaGithub size={30} />
             </a>
@@ -124,14 +126,14 @@ const Navbar = () => {
               Email <HiOutlineMail size={30} />
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[3565f69]">
+          {/* <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[3565f69]">
             <a
               className="flex justify-between items-center w-full text-gray-300"
               href="/"
             >
               Resume <BsFillPersonLinesFill size={30} />
             </a>
-          </li>
+          </li> */}
         </ul>
       </div>
     </div>
