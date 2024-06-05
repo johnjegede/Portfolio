@@ -5,17 +5,13 @@ import {
   FaTimes,
   FaGithub,
   FaLinkedin,
-  FaFacebook,
+  
 } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import {
   Link,
-  Button,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
+  
 } from "react-scroll";
 
 const Navbar = () => {
