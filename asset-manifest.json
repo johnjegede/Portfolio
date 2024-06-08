@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.7279c505.css",
-    "main.js": "/Portfolio/static/js/main.e258311e.js",
+    "main.css": "/Portfolio/static/css/main.09129e9e.css",
+    "main.js": "/Portfolio/static/js/main.a34a1c2d.js",
+    "static/media/weatherHtml.png": "/Portfolio/static/media/weatherHtml.67f3179d96f08e982c47.png",
     "static/media/realestate.jpg": "/Portfolio/static/media/realestate.44fd19f4c6872731149c.jpg",
     "static/media/avat.jpg": "/Portfolio/static/media/avat.d5b8b05f9d8d5c60506c.jpg",
     "static/media/workImg.jpeg": "/Portfolio/static/media/workImg.e4c66be6ae2ae4f83608.jpeg",
@@ -16,11 +17,11 @@
     "static/media/firebase.png": "/Portfolio/static/media/firebase.209703cedf1b1a96bc52.png",
     "static/media/javascript.png": "/Portfolio/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/Portfolio/index.html",
-    "main.7279c505.css.map": "/Portfolio/static/css/main.7279c505.css.map",
-    "main.e258311e.js.map": "/Portfolio/static/js/main.e258311e.js.map"
+    "main.09129e9e.css.map": "/Portfolio/static/css/main.09129e9e.css.map",
+    "main.a34a1c2d.js.map": "/Portfolio/static/js/main.a34a1c2d.js.map"
   },
   "entrypoints": [
-    "static/css/main.7279c505.css",
-    "static/js/main.e258311e.js"
+    "static/css/main.09129e9e.css",
+    "static/js/main.a34a1c2d.js"
   ]
 }
